@@ -1,0 +1,23 @@
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <style type="text/css">
+    .divFrame{width: 260px; border: solid 1px #666; font-size: 10pt;}
+    .divTitle{background-color:#eee;padding:5px}
+    .divContent{padding:5px;display:none}
+    .divCurrColor{background-color:red;}
+  </style>
+<script type="text/javascript">
+          $(function(){
+            $(".divTitle").click(function(){
+              $(this).addClass("divCurrColor")
+              .next(".divContent").css("display","block");
+          })
+       })
+</script>
+  <div class="divFrame">
+    <div class="divTitle">Ö÷Ìâ</div>
+    <div class="divContent">
+      <p>a</p>
+      <p>b</p>
+      <p>c</p>
+    </div>
+  </div>
